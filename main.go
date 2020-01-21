@@ -8,7 +8,7 @@ import (
 
 	"context"
 
-	pb "github.com/EwanValentine/shippy-service-consignment/proto/consignment"
+	pb "github.com/newmind/shippy-service-consignment/proto/consignment"
 
 	micro "github.com/micro/go-micro"
 )
