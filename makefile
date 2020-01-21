@@ -1,8 +1,6 @@
 build:
-	GOOS=linux GOARCH=amd64 go build -o shippy-cli-consignment
-
-build.docker:
+	# GOOS=linux GOARCH=amd64 go build -o shippy-cli-consignment
 	docker build -t shippy-cli-consignment .
 
 run:
-	docker run shippy-cli-consignment
+	docker run --rm shippy-cli-consignment

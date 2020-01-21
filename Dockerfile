@@ -25,3 +25,14 @@ ADD consignment.json /app/consignment.json
 COPY --from=builder /app/shippy-cli-consignment .
 
 CMD ["./shippy-cli-consignment"]
+
+### build from host then copy it
+# FROM alpine:latest
+
+# RUN mkdir -p /app
+# WORKDIR /app
+
+# ADD consignment.json /app/consignment.json
+# ADD shippy-cli-consignment /app/shippy-cli-consignment
+
+# CMD ["./shippy-cli-consignment"]
