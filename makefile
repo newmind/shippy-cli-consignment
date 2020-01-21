@@ -3,4 +3,5 @@ build:
 	docker build -t shippy-cli-consignment .
 
 run:
-	docker run --rm shippy-cli-consignment
+	docker run --rm -e MICRO_REGISTRY=mdns shippy-cli-consignment
+
