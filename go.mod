@@ -2,9 +2,9 @@ module github.com/newmind/shippy-cli-consignment
 
 go 1.12
 
+replace github.com/newmind/shippy-service-consignment => ../shippy-service-consignment
+
 require (
-	golang.org/x/lint v0.0.0-20190313153728-d0100b6bd8b3 // indirect
-	golang.org/x/tools v0.0.0-20190524140312-2c0ae7006135 // indirect
+	github.com/newmind/shippy-service-consignment v0.0.0-00010101000000-000000000000
 	google.golang.org/grpc v1.26.0
-	honnef.co/go/tools v0.0.0-20190523083050-ea95bdfd59fc // indirect
 )
